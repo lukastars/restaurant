@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Domine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+html {
+  background: url(img/bg.jpg) no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Domine', Georgia, 'Times New Roman', Times, serif;
+  font-size: min(max(1rem, 4vw), 22px);
+  color: #ffff;
+  line-height: 1.4;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#nav-container {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 70%);
+}
+
+#nav-container h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: min(max(4rem, 6vw), 3rem);
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  background-color: transparent;
+  color: #ffff;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.5rem;
+  transition: color 0.5s;
+  border: none;
+  font-family: 'Barlow Condensed', Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif;
+  font-size: min(max(2rem, 6vw), 40px);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.3s;
+}
+nav button:hover {
+  text-shadow: 0px 0px 20px #c2bfbf;
+  transform: translateY(-10%);
+}
+.active {
+  text-shadow: 0px 0px 3px white;
+}
+
+/* HOME TAP */
+
+#home {
+  max-width: 700px;
+  padding: 1rem;
+  margin: 6rem 0;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s;
+  text-align: center;
+}
+
+#home img {
+  width: 45%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  opacity: 90%;
+}
+
+#home p {
+  font-size: min(max(2rem, 6vw), 40px);
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+#home .description {
+  font-family: 'Barlow Condensed', Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif;
+  font-size: 1.5rem;
+}
+
+#home .app {
+  display: inline-block;
+  flex-direction: row;
+  width: 100%;
+}
+#home .app img {
+  width: 60px;
+  margin: 0;
+}
+
+/* MENU*/
+#menu {
+  min-width: 60vw;
+  max-width: 700px;
+  padding: 1rem;
+  margin: 6rem 0;
+  margin-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  font-family: 'Pacifico', cursive;
+}
+
+#menu .category {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#menu .name {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#menu .description {
+  font-size: 1rem;
+  color: #c0c0c0;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/*CONTACT*/
+#contact {
+  min-width: 60vw;
+  max-width: 700px;
+  padding: 1rem;
+  margin: 6rem 0;
+  margin-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  font-family: 'Barlow Condensed', Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif;
+}
+
+#contact .contact-details {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+#contact img {
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+}
+.container label {
+  font-weight: bold;
+}
+
+/* Full-width input fields */
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 15px 0 15px 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 0;
+}
+
+/* Set a style for the submit button */
+.send {
+  background-color: #ed1250;
+  color: white;
+  padding: 10px 5px;
+  margin: 16px 0;
+  border: none;
+  cursor: pointer;
+  width: 6rem;
+  font-size: 1rem;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+.send:hover {
+  opacity: 1;
+}
+
+/*Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: 'Barlow Condensed', Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif;
+}
